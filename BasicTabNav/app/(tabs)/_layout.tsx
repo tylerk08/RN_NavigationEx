@@ -57,6 +57,19 @@ export default function TabsLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="param"
+        options={{
+          headerTitle: "Param",
+          tabBarIcon: ({ focused, color }) => (
+            <Ionicons
+              name={focused ? "cloud" : "cloud-outline"}
+              size={24}
+              color={color}
+            />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
